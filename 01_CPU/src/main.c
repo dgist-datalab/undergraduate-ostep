@@ -66,7 +66,7 @@ int main (int argc, char **argv) {
 	int before_dl_proc = 0;
 	for (i = 0; i < my_sched.cnum; i++) {
 		cproc = my_sched.cprocs + i;
-		cproc_print(cproc);
+		//cproc_print(cproc);
 		total_ta_time += cproc->exit_tick;
 		total_r_time += cproc->first_tick;
 		if (cproc->exit_tick <= cproc->deadline)
